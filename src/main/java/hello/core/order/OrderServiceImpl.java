@@ -33,7 +33,7 @@ public class OrderServiceImpl implements OrderService {
 
     //생성자를 통한 의존성 주입 -> 생성자가 하나일 경우에는 @Autowired를 붙이지 않아도 됨 ==> 생성자 의존성 주입을 사용하자!!!!
 //    @Autowired
-//    public OrderServiceImpl(MemberRepository memberRepository, @Qualifier("mainDiscountPolicy") DiscountPolicy discountPolicy) { //동일한 타입의 빈이 2개 이상일 경우 파라미터명으로 빈 이름 매칭하여 데려옴
+//    public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy) { //동일한 타입의 빈이 2개 이상일 경우 파라미터명으로 빈 이름 매칭하여 데려옴
 //        this.memberRepository = memberRepository;
 //        this.discountPolicy = discountPolicy;
 //    }
