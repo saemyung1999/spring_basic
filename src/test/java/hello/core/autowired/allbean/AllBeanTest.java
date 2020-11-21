@@ -38,6 +38,7 @@ public class AllBeanTest {
             return discountPolicy.discount(member, price);
         }
     }
+
     @Test
     void findAllBean() {
         ApplicationContext ac = new AnnotationConfigApplicationContext(AutoAppConfig.class, DiscountService.class);
